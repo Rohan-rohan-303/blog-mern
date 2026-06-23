@@ -40,7 +40,7 @@ const themeSlice = createSlice({
   }
 });
 
-export const authActions = authSlice.actions;
+export const { login, logout } = authSlice.actions;
 export const { toggleTheme } = themeSlice.actions;
 
 export const store = configureStore({
