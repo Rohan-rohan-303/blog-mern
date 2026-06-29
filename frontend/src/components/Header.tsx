@@ -60,6 +60,41 @@ export const Header = () => {
     }
   }
 
+  return(
+    <header className="sticky top-0 z-50 w-full ">
+      <div className="container flex h-16 mx-auto items-center">
+
+        <Link to="/blogs" className="mr-4 text-lg font-bold">
+          <span><img src="/assets/high-resolution-color-logo.png" alt="Blog App Logo" /></span>
+        </Link>
+
+        {isLoggedIn && (
+          <nav className="flex space-x-4">
+            <link>  Blogs</link>
+            <link>My Blogs</link>
+            <link>Add Blogs</link>
+
+            //action button segment
+
+           //theme switcher
+          <button>  
+            {isDarkMode ? <Sun /> : <Moon />}
+          </button>
+
+             </nav>
+
+
+
+
+
+
+          
+          
+        )}
+        
+      </div>
+    </header>
+  );
 
 
 
